@@ -172,12 +172,12 @@ a.nav-btn {
 	}
 
 	.banner-content h2 {
-		font-size: 64px; /* Increase heading size */
+		font-size: 64px;
 	}
 
 	.banner-btn {
-		font-size: 20px; /* Larger button text */
-		padding: 20px 40px; /* Increase button padding */
+		font-size: 20px;
+		padding: 20px 40px;
 	}
 
 	.banner-img {
