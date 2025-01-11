@@ -23,6 +23,12 @@ a {
     margin: auto;
 }
 
+@media screen and (max-width: 1270px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
 
 /* Header CSS Start  */
 
@@ -59,11 +65,6 @@ a.nav-btn {
 
 /* Responsive Code For Header  */
 
-@media screen and (max-width: 1270px) {
-    .flex-nav {
-        padding: 0 20px;
-    }
-}
 
 /* For tablets and smaller devices */
 @media screen and (max-width: 768px) {
@@ -95,3 +96,144 @@ a.nav-btn {
 
 /* Header CSS End  */
 
+
+/* Banner Css Start  */
+
+.banner-wrapper {
+    padding-bottom: 80px;
+}
+
+.flex-banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 80px 60px;
+	border-radius: 24px;
+	background: #C6E4D6;
+}
+
+.banner-content {
+	flex: 1 1 622px;
+}
+
+.banner-content h4 {
+	color: rgba(14, 14, 14, 50%);
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+.banner-content h2 {
+	color: var(--black);
+	font-size: 56px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+.banner-btn {
+	padding: 17px 34px;
+	display: inline-block;
+	background: var(--btn);
+	color: #fff;
+	border-radius: 8px;
+	font-size: 18px;
+}
+
+.banner-img {
+	flex: 1 1 474px;
+}
+
+.banner-img img {
+	width: 100%;
+}
+
+
+/* Responsive Code */
+
+/* For wider screens (1024px and above) */
+@media screen and (max-width: 1024px) {
+    .banner-wrapper {
+        padding-bottom: 50px;
+    }
+
+	.flex-banner {
+		padding: 100px;
+        flex-direction: column-reverse;
+	}
+
+    .banner-content {
+		flex: 1 1 auto;
+	}
+
+	.banner-content {
+		margin-top: 50px; 
+	}
+	.banner-content h4 {
+		font-size: 28px; 
+	}
+
+	.banner-content h2 {
+		font-size: 64px; /* Increase heading size */
+	}
+
+	.banner-btn {
+		font-size: 20px; /* Larger button text */
+		padding: 20px 40px; /* Increase button padding */
+	}
+
+	.banner-img {
+		flex: 0 0 auto; 
+	}
+}
+
+
+/* For tablets and smaller devices */
+@media screen and (max-width: 768px) {
+	.flex-banner {
+		flex-direction: column-reverse;
+		text-align: center;
+		padding: 40px 20px;
+	}
+
+	.banner-content {
+		flex: 1 1 auto;
+	}
+
+	.banner-content h4 {
+		font-size: 20px;
+	}
+
+	.banner-content h2 {
+		font-size: 36px;
+	}
+
+	.banner-btn {
+		font-size: 16px;
+		padding: 12px 24px;
+	}
+
+	.banner-img {
+		flex: 1 1 auto;
+	}
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+	.flex-banner {
+		padding: 30px 15px;
+	}
+
+	.banner-content h4 {
+		font-size: 18px;
+	}
+
+	.banner-content h2 {
+		font-size: 28px;
+	}
+
+	.banner-btn {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+
+	
+}
